@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+
+\usepackage{geometry} % Adjust page margins
+\usepackage{xcolor} % Add color support
+\usepackage{graphicx} % Include graphics
+\usepackage{lipsum} % For generating placeholder text
+
+% Define custom colors
+\definecolor{myblue}{RGB}{50,50,200}
+
+% Page margins
+\geometry{margin=1.25in}
+
+% Custom section format
+\usepackage{titlesec}
+\titleformat{\section}[block]{\normalfont\Large\bfseries\color{myblue}}{\thesection}{1em}{}
+
+\begin{document}   
+\vspace*{10em}
+\begin{center}
+\Huge\bfseries\color{myblue}
+\textbf{\LaTeX}
+\end{center}
+\vspace{2em}
+
+\section{\LARGE What is \LaTeX?}
+LaTeX is a typesetting system commonly used for the production of scientific and mathematical documents due to its excellent support for complex equations and mathematical symbols. It is widely used in academia for the preparation of research papers, theses, and presentations.
+
+\subsection{\Large Key Features of \LaTeX}
+\begin{itemize}
+  \item \textbf{Markup Language:} LaTeX documents are written in a markup language, allowing users to focus on content rather than formatting.
+  
+  \item \textbf{Cross-Referencing:} Easy cross-referencing of sections, figures, tables, and equations.
+  
+  \item \textbf{Mathematics Support:} Comprehensive commands for typesetting mathematical content.
+  
+  \item \textbf{Document Structure:} Hierarchical organization using commands for chapters, sections, subsections, etc.
+  
+  \item \textbf{Bibliography Management:} Integration with BibTeX or BibLaTeX for managing references.
+  
+  \item \textbf{Consistent Formatting:} Ensures a professional appearance with consistent formatting.
+\end{itemize}
+
+\textcolor{myblue}{\textbf{To create a LaTeX document:}} Write content in a plain text file with a .tex extension. Use a LaTeX compiler (e.g., pdflatex or xelatex) to generate a PDF. LaTeX editors like Overleaf provide an interactive environment.
+
+
+\section{\LARGE Importance of \LaTeX}
+LaTeX is widely used and valued in various academic and professional settings due to its ability to produce high-quality documents. Key reasons include:
+
+\begin{itemize}
+  \item \textbf{Professional Typesetting:} Ensures a polished and professional appearance.
+  
+  \item \textbf{Mathematical Typesetting:} Excellent support for mathematical equations and symbols.
+  
+  \item \textbf{Cross-Referencing:} Simplifies cross-referencing and maintains consistency.
+  
+  \item \textbf{Document Structure:} Allows for clear organization and presentation of information.
+  
+  \item \textbf{Bibliography Management:} Streamlines referencing and bibliography generation.
+  
+  \item \textbf{Consistent Formatting:} Ensures consistency across documents for a professional look.
+  
+  \item \textbf{Community Support:} Active community provides support, documentation, and additional packages.
+  
+  \item \textbf{Platform Independence:} LaTeX documents are platform-independent and easily shareable.
+\end{itemize}
+
+\textbf{Open Source:} LaTeX is open-source, fostering collaboration and innovation within the LaTeX community.
+
+\newpage
+
+\section{\LARGE Adding a Figure and Table}
+In LaTeX, you can easily add figures and tables to enhance the visual appeal of your documents.
+\\
+\subsection{\large Adding a Figure:}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{image.png}
+    \caption{Sample Figure}
+    \label{fig:latex-logo}
+\end{figure}
+\subsection{\large Adding a Table}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|} \hline 
+         \textbf{Column1} & \textbf{Column2} & \textbf{Column3} \\
+        \hline
+        Row 1, Cell 1 & Row 1, Cell 2 & Row 1, Cell 3 \\
+        \hline
+        Row 2, Cell 1 & Row 2, Cell 2 & Row 2, Cell 3 \\
+        \hline
+        Row 3, Cell 1 & Row 3, Cell 2 & Row 3, Cell 3 \\
+        \hline
+    \end{tabular}
+    \caption{Sample Table}
+    \label{tab:my_label}
+\end{table}
+
+\end{document}
